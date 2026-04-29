@@ -1,0 +1,253 @@
+/**************** FONTS Presets ************/
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('fonts/YoungSerif.ttf'); /* Ensure this path matches your setup */
+}
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('fonts/SpaceGrotesk.ttf');
+}
+
+/**************** GLOBAL VARIABLES & RESET ************/
+:root {
+    --primary-green: #374b37; /* Adjusted to perfectly match the mockup's green */
+    --dark-grey: #303030;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'SpaceGrotesk', sans-serif;
+}
+
+/**************** TOP SECTION (HEADER + HERO) ************/
+.top-section {
+    background-color: var(--primary-green);
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+/**************** HEADER ************/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.logo-text {
+    color: var(--white);
+    font-family: 'SpaceGrotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.arrow-down {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.nav-button {
+    background-color: var(--white);
+    color: var(--primary-green);
+    text-decoration: none;
+    padding: 6px 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/**************** HERO SECTION ************/
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero-image-placeholder {
+    background-color: var(--white);
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.hero-text-content {
+    color: var(--white);
+    max-width: 600px;
+}
+
+.hero-text-content h1 {
+    font-family: 'YoungSerif', serif;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/**************** PHOTO GALLERY ************/
+#gallery {
+    padding: 80px 60px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+#gallery h2 {
+    font-family: 'YoungSerif', serif;
+    font-size: 36px;
+    color: var(--dark-grey);
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    background-color: var(--primary-green);
+    width: 200px;
+    height: 266px; /* 3:4 Aspect Ratio */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-card p {
+    color: var(--white);
+    font-size: 13px;
+    text-align: center;
+}
+
+/**************** ORGANIZATION SECTION ************/
+#organization {
+    padding: 60px 60px 100px 60px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.org-info {
+    text-align: center;
+    max-width: 300px;
+}
+
+.org-info h2 {
+    font-family: 'YoungSerif', serif;
+    color: var(--primary-green);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.org-info p {
+    color: var(--dark-grey);
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.btn-more-info {
+    display: inline-block;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.org-logo-placeholder {
+    background-color: var(--primary-green);
+    width: 280px;
+    height: 380px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.org-logo-placeholder p {
+    color: var(--white);
+    text-align: center;
+}
+
+.org-cossb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.cossb-placeholder {
+    background-color: var(--primary-green);
+    width: 220px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+.cossb-text {
+    text-align: center;
+    color: var(--dark-grey);
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/**************** FOOTER ************/
+#simple-footer {
+    height: 150px;
+    width: 100%;
+    background-color: var(--primary-green);
+}
