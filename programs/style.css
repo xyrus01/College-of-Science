@@ -194,8 +194,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    transition: transform 0.3s ease;
 }
 .prog-img{
     width: 100%;
@@ -209,6 +207,12 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+}
+#organization img{
+    transition: transform 0.3s ease;
+}
+#organization img:hover{
+    transform: scale(1.1);
 }
 #org-info {
     display: flex;
@@ -243,13 +247,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 #org-cossb {
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    overflow: hidden;
 }
 #cossb-logo {
     width: 100%;

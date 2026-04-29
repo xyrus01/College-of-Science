@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Science | BS Biology</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /**************** Text Sizes ************/
+        h1 {
+            font-family: 'YoungSerif';
+            font-size: clamp(42px, 6vw, 82px);
+            margin: 0px;
+        }
+        h2 {
+            font-family: 'YoungSerif';
+            font-size: clamp(30px, 4vw, 52px);
+            margin: 0px;
+        }
+        h3 {
+            font-family: 'SpaceGrotesk';
+            font-size: clamp(16px, 2vw, 24px);
+            margin: 0px;
+        }
+        p {
+            font-family: 'SpaceGroteskP';
+            font-size: clamp(14px, 1.8vw, 22px);
+            margin: 0px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body style="margin: 0px; background-color: white;">
+
+    <!------------ HEADER ------------------------->
+    <div id="header">
+        <div id="space">
+            <a href="../index.html">
+                <div id="logo">
+                    <div id="logo-container">
+                        <img src="../images/logo1.png" style="height: 100%;">
+                    </div>
+                    <h3 style="color: white;">College of Science</h3>
+                </div>
+            </a>
+
+            <!-- HAMBURGER -->
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" id="hamburger">☰</label>
+
+            <div id="navigation">
+                <div class="item">
+                    <a href="../organizations.html"><h3>Organizations</h3></a>
+                </div>
+
+                <!-- DROPDOWN -->
+                <div id="dropdown">
+                    <a href="../programs.html">
+                        <div class="item">
+                            <h3>Programs</h3>
+                            <div id="arrow">
+                                <img src="../images/arrow2.png" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </a>
+                    <div id="content">
+                        <a href="biology.html"><div class="item"><p>BSBio</p></div></a>
+                        <a href="cs.html"><div class="item"><p>BSCS</p></div></a>
+                        <a href="psych.html"><div class="item"><p>BS Psych</p></div></a>
+                        <a href="math.html"><div class="item"><p>BS Math</p></div></a>
+                        <a href="hs.html"><div class="item"><p>BHS</p></div></a>
+                    </div>
+                </div>
+
+                <a href="../about.html">
+                    <div class="about">
+                        <h3>About</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!------------ HERO ------------------------->
+    <div style="background-color: #2D412C; width: 100%;">
+        <div class="margin" style="padding: 60px 0px;">
+            <div id="hero">
+                <div id="hero-image">
+                    <img src="../programs_img/hs.png" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div id="hero-text">
+                    <h1 style="color: white; text-align: center;">Bachelor in Human Services</h1>
+                    <p style="color: white; text-align: justify;">
+                        Learn how to make a real difference in people's lives. This program focuses on community support, social welfare, and human development — equipping you with the skills to work with individuals, families, and organizations that need it most.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ PHOTO GALLERY ------------------------->
+    <div class="margin">
+        <div id="gallery">
+            <h2 style="color: #303030; text-align: center;">Photo Gallery</h2>
+            <div id="gallery-grid">
+                <div class="gallery-card">
+                    <img class="prog-img" src="images/hs1.jpg">
+                </div>
+                <div class="gallery-card">
+                    <img class="prog-img" src="images/hs2.jpg">
+                </div>
+                <div class="gallery-card">
+                    <img class="prog-img" src="images/hs3.jpg">
+                </div>
+                <div class="gallery-card">
+                    <img class="prog-img" src="images/hs4.jpg">
+                </div>
+                <div class="gallery-card">
+                    <img class="prog-img" src="images/hs5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ ORGANIZATION ------------------------->
+    <div class="margin">
+        <div id="organization">
+            <div id="org-info">
+                <h2 style="color: #2D412C;">Human Services Organization</h2>
+                <p style="color: #303030;">This program is associated with the Buklarang Gabay Patnubay and College of Science Students Body as its mother organization</p>
+                <a href="../organizations.html">
+                    <div id="org-btn"><h3>More Info</h3></div>
+                </a>
+            </div>
+
+            <div style="display: flex; gap: 20px;">
+                <div id="org-logo">
+                    <img style="width: 100%; height: auto;" src="../logo/HS - BGP.png">
+                </div>
+                <div id="org-cossb">
+                    <div id="cossb-logo">
+                        <img style="width: 100%; height: auto;" src="../logo/COSSB.png">
+                    </div>
+                    <div style="width: 100%;">
+                        <p style="color: #303030; text-align: center;">College of Science Student Body (COSSB)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ FOOTER ------------------------->
+    <div style="background-color: #2D412C;">
+        <div class="margin">
+            <div id="footer">
+                <a href="../index.html">
+                    <div id="footer-logo">
+                        <div id="footer-logo-container">
+                            <img src="../images/logo1.png" style="height: 100%;">
+                        </div>
+                        <h3 style="color: white;">College of Science</h3>
+                    </div>
+                </a>
+
+                <div id="foot_nav">
+                    <div id="programs-list">
+                        <a href="biology.html"><p>BS in Biology</p></a>
+                        <a href="cs.html"><p>BS in Computer Science</p></a>
+                        <a href="psych.html"><p>BS in Psychology</p></a>
+                        <a href="math.html"><p>BS Science in Mathematics</p></a>
+                        <a href="hs.html"><p>Bachelor in Human Services</p></a>
+                    </div>
+                    <div id="nav_container">
+                        <a href="../index.html"><p>Home</p></a>
+                        <a href="../about.html"><p>About</p></a>
+                        <a href="../contacts.html"><p>Contacts</p></a>
+                        <a href="../organizations.html"><p>Organizations</p></a>
+                        <a href="../developers.html"><p>Developers</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot2">
+        <h3>Norturing Tommorow's Noblest</h3>
+    </div>
+
+</body>
+</html>
