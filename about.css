@@ -182,6 +182,8 @@
     background-color: #2D412C;
     color: white;
     border-radius: 10px;
+
+    overflow: hidden;
 }
 .box p {
     padding: 20px;
