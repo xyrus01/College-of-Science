@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Science | Contacts</title>
+    <link rel="stylesheet" href="contacts.css">
+    <style>
+        /**************** Text Sizes ************/
+        h1 {
+            font-family: 'YoungSerif';
+            font-size: clamp(42px, 6vw, 82px);
+            margin: 0px;
+        }
+        h2 {
+            font-family: 'YoungSerif';
+            font-size: clamp(30px, 4vw, 52px);
+            margin: 0px;
+        }
+        h3 {
+            font-family: 'SpaceGrotesk';
+            font-size: clamp(16px, 2vw, 24px);
+            margin: 0px;
+        }
+        p {
+            font-family: 'SpaceGroteskP';
+            font-size: clamp(14px, 1.8vw, 22px);
+            margin: 0px;
+        }
+        .textboxes label {
+            font-family: 'SpaceGroteskP';
+            font-size: clamp(14px, 1.8vw, 22px);
+            margin: 0px;
+            color: #2D412C;
+        }
+        .textboxes input {
+            font-family: 'SpaceGroteskP';
+            font-size: clamp(14px, 1.8vw, 22px);
+            margin: 0px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px; background-color: #303030;">
+
+    <!------------ HEADER ------------------------->
+    <div id="header">
+        <div id="space">
+            <a href="index.html">
+                <div id="logo">
+                    <div id="logo-container">
+                        <img src="images/logo1.png" style="height: 100%;">
+                    </div>
+                    <h3 style="color: white;">College of Science</h3>
+                </div>
+            </a>
+
+            <!-- HAMBURGER -->
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" id="hamburger">☰</label>
+
+            <div id="navigation">
+                <div class="item">
+                    <a href="organizations.html"><h3>Organizations</h3></a>
+                </div>
+
+                <!-- DROPDOWN -->
+                <div id="dropdown">
+                    <a href="programs.html">
+                        <div class="item">
+                            <h3>Programs</h3>
+                            <div id="arrow">
+                                <img src="images/arrow2.png" style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                    </a>    
+                    <div id="content">
+                        <a href="programs/biology.html">
+                            <div class="item"><p>BSBio</p></div>
+                        </a>
+                        
+                        <a href="programs/cs.html">
+                            <div class="item"><p>BSCS</p></div>
+                        </a>
+
+                        <a href="programs/psych.html">
+                            <div class="item"><p>BS Psych</p></div>
+                        </a>
+
+                        <a href="programs/math.html">
+                            <div class="item"><p>BS Math</p></div>
+                        </a>
+
+                        <a href="programs/hs.html">
+                            <div class="item"><p>BHS</p></div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="about.html">
+                    <div class="about">
+                        <h3>About</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!------------ FRONT PAGE ------------------------->
+    <div style="background-color: #303030; width: 100%;">
+        <div class="margin" style="padding: 45px 0px;">
+            <div id="contact-wrapper">
+
+                <!-- FORM -->
+                <div id="form">
+                    <div id="all_gap">
+                        <h2 style="text-align: center; color: #303030;">Contact Form</h2>
+
+                        <form>
+                            <div id="txt_gap">
+                                <div class="textboxes">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name">
+                                </div>
+                                <div class="textboxes">
+                                    <label for="Email">Email</label>
+                                    <input type="text" id="Email" required>
+                                </div>
+                                <div class="textboxes">
+                                    <label for="Subject">Subject</label>
+                                    <input type="text" id="Subject">
+                                </div>
+                                <div class="textboxes">
+                                    <label for="Message">Message</label>
+                                    <textarea id="Message"></textarea>
+                                </div>
+                                <input type="submit" id="Submit">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div id="contact-info">
+                    <h1>Contact Us!</h1>
+                    <p>(02) 8539-9950</p>
+                    <p>dirmorong@urs.edu.ph</p>
+                    <p>www.urs.edu.ph</p>
+                    <div id="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1931.221682469435!2d121.23548053898872!3d14.516613685177942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c120ba63a7ab%3A0x71c25c4105bf1c5b!2sUniversity%20of%20Rizal%20System%20-%20Morong%20Campus!5e0!3m2!1sen!2sph!4v1777354361051!5m2!1sen!2sph" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <p>Sumulong St, Morong, Rizal</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

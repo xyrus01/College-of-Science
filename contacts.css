@@ -1,0 +1,347 @@
+/**************** FONTS Presets ************/
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('fonts/YoungSerif.ttf');
+}
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('fonts/SpaceGrotesk.ttf');
+}
+@font-face {
+    font-family: 'SpaceGroteskP';
+    src: url('fonts/SpaceGroteskP.ttf');
+}
+
+/**************** HEADER ************/
+#header {
+    height: 80px;
+    width: 100%;
+    background-color: #303030;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+#header #space {
+    margin: 0px 82px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+#logo-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo:hover {
+    transform: scale(1.05);
+}
+
+/* HAMBURGER */
+#nav-toggle { display: none; }
+#hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+#nav-toggle:checked ~ #navigation { display: flex; }
+
+#navigation {
+    display: flex;
+    align-items: center;
+}
+#navigation .item {
+    width: 200px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+}
+#navigation .item:hover {
+    transform: scale(1.03);
+}
+#arrow {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 10px;
+    height: 7px;
+}
+
+/* DROPDOWN */
+#dropdown {
+    position: relative;
+    cursor: pointer;
+}
+#dropdown .item {
+    height: 80px;
+    gap: 5px;
+}
+#content {
+    background-color: #303030;
+    z-index: 100;
+    border: 2px solid white;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    min-width: 200px;
+}
+#dropdown:hover #content {
+    display: flex;
+}
+#content .item {
+    height: 35px;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+#content .item:hover {
+    background-color: white;
+    color: #303030;
+}
+
+#navigation .about {
+    width: 160px;
+    height: 35px;
+    background-color: white;
+    color: #2D412C;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+}
+#navigation .about:hover {
+    transform: scale(1.05);
+}
+
+/**************** MARGIN ************/
+.margin {
+    margin: 0px 82px;
+}
+
+/**************** CONTACT PAGE ************/
+#contact-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FORM */
+#form {
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+#form #all_gap {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#form #txt_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.textboxes {
+    display: flex;
+    flex-direction: column;
+}
+.textboxes input {
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2D412C;
+    color: white;
+}
+.textboxes #Message {
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2D412C;
+    color: white;
+
+    font-family: 'SpaceGroteskP';
+    font-size: clamp(14px, 1.8vw, 22px);
+    margin: 0px;
+}
+#Submit {
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #303030;
+    color: white;
+
+    font-family: 'SpaceGroteskP';
+    font-size: clamp(14px, 1.8vw, 22px);
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+
+/* CONTACT INFO */
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+#map-container {
+    background-color: white;
+    height: 310px;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/**************** RESPONSIVE — TABLET (≤ 1024px) ************/
+@media (max-width: 1024px) {
+    #header #space {
+        margin: 0 40px;
+    }
+    .margin {
+        margin: 0 40px;
+    }
+    #navigation .item {
+        width: 140px;
+    }
+    #navigation .about {
+        width: 120px;
+    }
+    #content{
+        min-width: 100px;
+    }
+    #map-container {
+        width: 440px;
+    }
+    #form {
+        width: 380px;
+    }
+}
+
+/**************** RESPONSIVE — MOBILE (≤ 768px) ************/
+@media (max-width: 768px) {
+    #header {
+        height: 64px;
+    }
+    #header #space {
+        margin: 0 24px;
+        position: relative;
+    }
+
+    /* Hamburger */
+    #hamburger { display: block; }
+    #nav-toggle { display: none; }
+    #navigation {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+        padding: 16px 0;
+        z-index: 199;
+    }
+    #nav-toggle:checked ~ #navigation { display: flex; }
+    #navigation .item {
+        width: 100%;
+        height: 48px;
+        justify-content: flex-start;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+    #navigation .about {
+        width: calc(100% - 48px);
+        margin: 8px 24px 0;
+        height: 44px;
+        border-radius: 10px;
+    }
+
+    /* Dropdown inside mobile nav */
+    #dropdown { width: 100%; }
+    #dropdown .item {
+        height: 48px;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0 24px;
+    }
+    #content {
+        position: static;
+        display: flex;
+        box-shadow: none;
+        border: none;
+        border-left: 3px solid white;
+        margin-left: 24px;
+    }
+    #dropdown:hover #content { display: flex; }
+    #content .item {
+        height: 40px;
+        justify-content: flex-start;
+        padding: 0 16px;
+    }
+
+    /* Contact page */
+    .margin {
+        margin: 0 24px;
+    }
+    #contact-wrapper {
+        flex-direction: column;
+        gap: 32px;
+    }
+    #form {
+        width: 100%;
+        flex-shrink: unset;
+    }
+    #contact-info {
+        width: 100%;
+    }
+    #map-container {
+        width: 100%;
+        height: 240px;
+    }
+}

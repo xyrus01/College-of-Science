@@ -1,0 +1,57 @@
+/**************** FONTS Presets ************/
+@font-face{
+    font-family: 'YoungSerif';
+    src: url('../fonts/YoungSerif.ttf');
+    }
+@font-face{
+    font-family: 'SpaceGrotesk';
+    src: url('../fonts/SpaceGrotesk.ttf');
+    }
+@font-face{
+    font-family: 'SpaceGroteskP';
+    src: url('../fonts/SpaceGroteskP.ttf');
+    }
+
+/**************** HEADER ************/
+#header{
+    height: 80px;
+    width: 100%;
+    background-color: #1C335B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header #space{
+    margin: 0px 82px 0px 82px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation{
+    display: flex;
+}
+#navigation .item{
+    width: 200px;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+}
+#navigation .about{
+    width: 200px;
+    height: 35px;
+    color: #1C335B;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**************** FONTS Presets ************/
+.margin{
+    margin: 60px 82px 60px 82px;
+}
